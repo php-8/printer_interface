@@ -8,7 +8,7 @@ class Client_clean extends AppModel {
         parent::__construct();
     }
 
-    public function Get_products_imagesy() {
+    public function Get_products_img() {
         $url = "vce-o-printere.ru/administrator/api/receiver.php?method=get_products_images";
         $client = curl_init($url);
         curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
@@ -38,7 +38,7 @@ class Client_clean extends AppModel {
         return $this->array;
     }
 
-    public function Getter() {
+    public function get_products() {
         $url = "vce-o-printere.ru/administrator/api/receiver.php?method=get_products";
         $client = curl_init($url);
         curl_setopt($client, CURLOPT_RETURNTRANSFER, true);

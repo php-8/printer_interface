@@ -92,7 +92,7 @@ echo $dateVarName;
 <?php
 $set = new Client_clean();
 
-//$array = $set->Getter();
+//$array = $set->get_products();
 
 //$array = $set->Get_product_to_category();
 
